@@ -44,6 +44,9 @@ const BasicForm = (props) => {
     if (!enteredFirstName && !enteredLastNameIsValid && !enteredEmailIsValid) {
       return;
     }
+
+    console.log("SUBMITTED!");
+    console.log(enteredFirstName, enteredLastName, enteredEmail);
     resetFirstNameInput();
     resetLastNameInput();
     resetEmailInput();
